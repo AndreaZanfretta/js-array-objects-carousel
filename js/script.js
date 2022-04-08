@@ -91,6 +91,7 @@ function hide(){
 
 function show(){
     showImage[currentIndex].classList.add("show");
+    showImage[currentIndex].classList.add("fade");
     filterImage[currentIndex].classList.remove("filter");
     filterImage[currentIndex].classList.add("border"); 
 }
@@ -100,4 +101,5 @@ let interval = setInterval(giu, 3000);
 function stopCarousel(){
     clearInterval(interval);
 }
+
  Slider.append(mainImage);
