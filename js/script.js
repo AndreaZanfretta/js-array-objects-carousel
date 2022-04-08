@@ -60,6 +60,9 @@ down.addEventListener("click", giu);
 const up = document.getElementById("up");
 up.addEventListener("click", su);
 
+const stop = document.getElementById("btn");
+stop.addEventListener("click", stopCarousel);
+
 currentIndex = 0;
 showImage[currentIndex].classList.add("show");
 
@@ -90,5 +93,11 @@ function show(){
     showImage[currentIndex].classList.add("show");
     filterImage[currentIndex].classList.remove("filter");
     filterImage[currentIndex].classList.add("border"); 
+}
+
+let interval = setInterval(giu, 3000);
+
+function stopCarousel(){
+    clearInterval(interval);
 }
  Slider.append(mainImage);

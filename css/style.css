@@ -97,3 +97,9 @@
 .border{
     border: 3px solid rgb(190, 190, 190);
 }
+#btn{
+    width: 100px;
+    height: 40px;
+    margin-top: 40px;
+    margin-right: 550px;
+}
